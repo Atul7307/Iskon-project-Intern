@@ -1,0 +1,9 @@
+.about-page {
+  background: url("./assets/images/pageBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  width: 90%;
+}

@@ -1,0 +1,411 @@
+.ramayanPage {
+  background-image: url("./assets/image/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ramayanDiv {
+  padding: 60px 50px;
+}
+
+.ramayanSection {
+  padding: 40px 40px;
+  border: 2px solid #bc3521;
+  border-radius: 15px;
+  background-color: #fff0de;
+}
+
+.borderedText {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #bc3521;
+  text-shadow: -1px -1px 0 white, -1px -1px 0 white, -1px 1px 0 white,
+    -1px 1px 0 white;
+}
+
+.ramayanSection .sectionDesc {
+  color: black;
+  font-family: "Open sans", sans-serif;
+  font-size: 2rem;
+}
+
+.whyJoinSection {
+  background-image: url("./assets/image/sectionBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+
+.whyJoinImg {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.whyJoinHeading {
+  color: white;
+  font-size: 2.2rem;
+  background-color: #c61d21;
+  border: 5px solid white;
+  text-align: center;
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  padding: 15px 0;
+}
+
+.whyJoinInnerSec {
+  width: 60%;
+}
+
+.whyJoinDesc {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.exploreLocationSection {
+  background-image: url("./assets/image/exploreBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.exploreHeading {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(#c61d21 0%, #600e10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 5.5rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.exploreImagesRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.exploreImageItem {
+  width: 30%;
+  text-align: center;
+}
+
+.exploreImage {
+  height: 500px;
+}
+
+.exploreItemText {
+  color: #c61d21;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 40px 0 20px 0;
+}
+
+.comfortCareSection {
+  background-image: url("./assets/image/comfort_care_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.comfortCareHeading {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(#c61d21 0%, #600e10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 5.5rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.comfortCareImages {
+  display: flex;
+}
+
+.comfortCareItem {
+  width: 25%;
+}
+
+.comfortCareText {
+  color: black;
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.comfortCareCard {
+  border: 3px solid #c61d21;
+  width: 60%;
+  text-align: center;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.comfortCardHead {
+  background-color: #c61d21;
+  padding: 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.comfortCardHead .cardHeading {
+  color: white;
+  font-family: "open sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.comfortCardTail {
+  background-color: #fff1df;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 0;
+}
+
+.comfortCardTail p {
+  color: #c61d21;
+  font-family: "open sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.comfortCardTail h1 {
+  color: #c61d21;
+  font-family: "open sans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.comfortCardBottom {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.comfortPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comfortCardBottom h3 {
+  color: #c61d21;
+  font-family: "open sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.comfortCardBottom h2 {
+  color: #7e2619;
+  font-family: "open sans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.comfortCardBottom span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.comfortCardBottom h4 {
+  color: #de7d0d;
+  font-family: "open sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.textSpan {
+  font-size: 1.8rem;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  color: white;
+  padding: 15px 80px;
+  background-color: #c61d21;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+@media (max-width: 678px) {
+  .ramayanDiv {
+    padding: 40px 20px 30px;
+  }
+
+  .ramayanSection {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .borderedText {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .ramayanSection .sectionDesc {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .whyJoinSection {
+    background-image: url("./assets/image/sectionBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0px;
+  }
+
+  .whyJoinImg {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .whyJoinHeading {
+    color: white;
+    font-size: 1.2rem;
+    background-color: #c61d21;
+    border: 3px solid white;
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+  }
+
+  .whyJoinInnerSec {
+    width: 60%;
+  }
+
+  .whyJoinDesc {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .whyJoinInnerSec {
+    width: 100%;
+  }
+
+  .exploreImagesRow {
+    display: ruby;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .exploreImageItem {
+    width: 50%;
+    padding: 0 2.5%;
+    text-align: center;
+  }
+
+  .exploreItemText {
+    font-size: 18px;
+    padding: 40px 0 20px 0;
+  }
+
+  .exploreImage {
+    height: 200px;
+  }
+
+  .comfortCareImages {
+    display: ruby;
+  }
+
+  .comfortCareItem {
+    width: 50%;
+  }
+
+  .comfortCareText {
+    font-size: 14px;
+  }
+
+  .comfortCareHeading {
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .exploreHeading {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+
+  .comfortCareCard {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .comfortCardTail {
+    padding: 10px 40px;
+  }
+
+  .comfortCardTail p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .comfortCardTail h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .comfortCardBottom {
+    padding: 0 20px 0;
+  }
+
+  .comfortCardBottom h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .comfortPhone {
+    display: ruby;
+  }
+
+  .comfortCardBottom h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .comfortCardBottom span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .comfortCardBottom h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .textSpan {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+}

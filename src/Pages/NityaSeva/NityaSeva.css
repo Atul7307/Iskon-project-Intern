@@ -1,0 +1,60 @@
+.nitya-seva-page {
+  background: url("./assets/images/pageBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4rem;
+}
+
+.nitya-seva-banner {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nitya-seva-img {
+  max-width: 90% !important;
+}
+
+.head-nitya-seva {
+  background: radial-gradient(circle, #c61d21 0%, #bb1b1f 11%, #600e10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 3.2rem;
+  text-align: center;
+  font-style: italic;
+  width: 90%;
+  padding: 30px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+
+.become-nitya-sevak {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.become-nitya-sevak-card {
+  padding: 0 10%;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 678px) {
+  .head-nitya-seva {
+    font-size: 1.2rem;
+    width: 100%;
+    padding-bottom: 0 !important;
+  }
+}

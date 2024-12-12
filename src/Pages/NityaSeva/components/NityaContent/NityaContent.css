@@ -1,0 +1,53 @@
+.nitya-content {
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nitya-content .content-box {
+  width: 80%;
+  padding: 2% 0;
+  z-index: 2;
+}
+
+.nitya-content-bg {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  margin-top: -20px;
+}
+
+.nitya-content h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  text-align: justify;
+}
+
+.nitya-content .shlok {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: #c61d21;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+@media (max-width: 678px) {
+  .nitya-content br {
+    display: none;
+  }
+
+  .nitya-content .content-box {
+    padding: 5%;
+    width: 100%;
+  }
+  .nitya-content h3 {
+    font-size: 0.8em;
+  }
+
+  .nitya-content .shlok {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}

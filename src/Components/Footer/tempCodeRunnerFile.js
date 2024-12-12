@@ -1,0 +1,1 @@
+col-12 col-lg-4 pb-4 d-flex justify-content-center align-items-center

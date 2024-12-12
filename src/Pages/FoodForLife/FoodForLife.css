@@ -1,0 +1,173 @@
+.food-life-banner {
+  width: 100%;
+}
+
+.food-life-page {
+  background-image: url("./assets/images/Bg.png");
+  background-size: cover;
+  padding: 5rem 5rem;
+}
+
+.food-life-head {
+  font-family: "Open Sans", sans-serif;
+  color: #de7d0d;
+  font-weight: 700;
+  font-size: 65px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.food-life-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.contribute-section {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.food-life-span {
+  font-size: 1.8rem;
+  width: fit-content;
+  font-weight: 600;
+  word-spacing: 5px;
+  color: white;
+  padding: 5px 40px;
+  background-color: #c61d21;
+  border: 3px solid white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.secHead {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.first {
+  grid-area: first;
+}
+.second {
+  grid-area: second;
+}
+.third {
+  grid-area: third;
+}
+.fourth {
+  grid-area: fourth;
+}
+.fifth {
+  grid-area: fifth;
+}
+.sixth {
+  grid-area: sixth;
+}
+.seventh {
+  grid-area: seventh;
+}
+
+.contribution {
+  background-color: rgba(227, 193, 149, 0.4);
+  border: 1px solid #de7d0d;
+  border-radius: 10px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "first second" "third fourth" "fifth sixth" "seventh .";
+}
+
+.contribution .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0dc;
+  border: 1px solid #f08d49;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 05px;
+}
+
+.item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+
+.item button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  background-color: rgba(227, 193, 149, 0.2);
+  padding: 05px 20px;
+  border: 2px solid #bc3521;
+  border-radius: 25px;
+  color: #bc3521;
+}
+
+@media (max-width: 678px) {
+  .food-life-page {
+    padding: 40px 15px;
+  }
+
+  .food-life-head {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .food-life-text {
+    font-size: 1.2em;
+    text-align: justify;
+    padding-bottom: 10px;
+  }
+
+  .pt-4 {
+    padding-top: 0 !important;
+  }
+
+  .secHead {
+    margin-top: 10px;
+  }
+
+  .contribute-section {
+    padding-top: 20px;
+  }
+
+  .food-life-span {
+    font-size: 1.2rem;
+    width: fit-content;
+    word-spacing: 2px;
+    padding: 5px 20px;
+  }
+
+  .contribution {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "first" "third" "fifth" "seventh" "second" "fourth" "sixth";
+  }
+
+  .item {
+    padding: 10px 20px;
+  }
+
+  .item h3 {
+    font-size: 15px;
+  }
+
+  .item button {
+    font-size: 12px;
+    background-color: rgba(227, 193, 149, 0.2);
+    padding: 05px 20px;
+    border: 2px solid #bc3521;
+    border-radius: 25px;
+    color: #bc3521;
+  }
+}

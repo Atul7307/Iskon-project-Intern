@@ -1,0 +1,15 @@
+.bg-cover-desktop {
+    background-size: cover;
+    background-image: url('./assets/bg2.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  
+  @media (max-width: 768px) {
+    .bg-cover-desktop {  
+      background-image: url('./assets/bg2_1.jpg');
+      background-repeat: no-repeat;
+      z-index: 5;
+    }
+  }
+  

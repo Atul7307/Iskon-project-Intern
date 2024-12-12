@@ -1,0 +1,142 @@
+/* Program.css */
+
+.program-container {
+  background-color: #f9f4f0;
+  border: 2px solid #c0392b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: auto;
+}
+
+.program-title {
+  background-color: #c0392b;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.program-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.program-image {
+  width: 40%;
+  height: 100%;
+  border-radius: 8px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.program-description {
+  width: 55%;
+  color: #333;
+}
+
+.program-subtitle {
+  color: #c0392b;
+  font-weight: 500;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.program-description ul {
+  list-style-type: disc;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.program-button {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.program-nav-button {
+  background-color: #c0392b;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.program-nav-button:hover {
+  background-color: #a83227;
+}
+
+@media (max-width: 678px) {
+  .program-content {
+    display: block;
+    padding: 5px;
+  }
+
+  .program-title {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .program-image {
+    width: 100%;
+  }
+
+  .program-description {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .program-subtitle {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .program-description ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .program-description li {
+    font-size: 14px;
+  }
+
+  .program-description li strong {
+    font-weight: 400;
+  }
+
+  .program-button {
+    margin-top: 0;
+  }
+
+  .slider-section {
+    background-image: url("./assets/slider_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+}

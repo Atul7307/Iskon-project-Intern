@@ -1,0 +1,12 @@
+.mission-page {
+  background: url("./assets/images/pageBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 600px) {
+  /* .philosophy-img {
+    padding: 20px 0 40px 0;
+  } */
+}

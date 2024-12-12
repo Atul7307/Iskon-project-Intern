@@ -1,0 +1,23 @@
+.flame-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+.mangal-arti {
+  background-image: url(./assets/images/background.png);
+  object-fit: cover;
+}
+
+
+.card{
+  background: url(./assets/images/background2.png);
+  object-fit: cover;
+}
+

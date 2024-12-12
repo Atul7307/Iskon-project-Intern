@@ -1,0 +1,11 @@
+.donate-page {
+  background-image: url("./assets/images/pageBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donate-content {
+  padding: 5em 0;
+  width: 85%;
+}

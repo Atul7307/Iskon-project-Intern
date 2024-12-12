@@ -1,0 +1,27 @@
+.card1{
+    background: url(./assets/bg1.png);
+    
+}
+
+.sunday{
+    text-shadow: -4px -4px 0 #ffffff, 4px -4px 0 #ffffff, -4px 4px 0 #ffffff, 4px 4px 0 #ffffff;
+}
+
+.bg2{
+    background: url(./assets/bg3.png);
+}
+
+@media (max-width:768px){
+    .bg2{
+        background: url(./assets/bg4.png);
+    }
+
+    .card1{
+        background: url(./assets/bg1.jpg);
+    }
+
+}
+
+.donation{
+    background: radial-gradient(50% 50% at 50% 50%, #c61d21 0%, #600e10 100%);
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-container {
+    background-image: url('./assets/firstThreeCombinedDesktopBg.png'); /* Default for desktop */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px; /* Padding for desktop */
+  }
+  
+  @media (max-width: 768px) {
+    .background-container {
+      background-image: url('./assets/mobileone.png'); /* Background for mobile */
+      padding-bottom: 0; /* Remove padding for mobile */
+    }
+  }
+
+  .image-container {
+    background-image: url('./assets/firstThreeCombinedDesktopBg.png');
+  }
+  
+  /* Mobile view styles using media query */
+  @media (max-width: 768px) {
+    .image-container {
+      border-radius: 0px; /* Set to zero for mobile */
+    }
+  }
+  

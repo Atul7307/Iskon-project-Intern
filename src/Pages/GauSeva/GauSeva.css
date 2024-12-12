@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  background: url(./assets/back.jpg);
+  background-size: cover;
+}
+
+.gau {
+  background: url(./assets/gaushala.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 0 40px #f9c0ab;
+  margin-bottom: 5%;
+}
+
+.donate {
+  background: url(./assets/donatebg.png);
+  background-size: cover;
+  box-shadow: 10px 0 40px #f9c0ab;
+}
+
+@media (max-width: 768px) {
+  .donate {
+    background-color: #fff0de;
+    background: none;
+    box-shadow: 0 0 20px #b24922 ;
+    border-radius: 20px 10px;
+  }
+  .page{
+    background-image: url();
+  }
+}

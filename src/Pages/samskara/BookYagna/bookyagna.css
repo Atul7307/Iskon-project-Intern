@@ -1,0 +1,12 @@
+.quote{
+    background-image: radial-gradient(#C61D21 ,#BB1B1F, #600E10  );
+    background-clip: text;
+    color: transparent;
+}
+
+.sams{
+    background-image: url(./assets/bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}

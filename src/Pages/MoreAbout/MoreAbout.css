@@ -1,0 +1,21 @@
+.more-about-page {
+    background: url("./assets/images/pageBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 4rem;
+  }
+  
+  .more-about-img {
+    padding: 30px 0 50px 0;
+  }
+  
+  .more-about {
+    width: 90%;
+  }
+  
+  @media (max-width: 600px) {
+    .more-about-img {
+      padding: 20px 0 40px 0;
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.left-bg1 {
+  position: absolute;
+  left: 0;
+  top: 10;
+  width: 20%;
+  z-index: 1;
+}
+
+.right-bg1 {
+  position: absolute;
+  right: 0;
+  top: 10;
+  width: 20%;
+  z-index: 1;
+}
+
+.ban {
+  padding: 80px 0 40px 0;
+}
+
+.ban h5 {
+  text-align: justify !important;
+}
+
+@media (max-width: 600px) {
+  .ban h5 {
+    text-align: justify !important;
+  }
+}
