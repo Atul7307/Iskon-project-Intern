@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "./HomeSlider.css";
 import image1 from "./assets/images/image1.png";
-import image2 from "./assets/images/image2.svg";
+import image2 from "./assets/images/image2.png";
 
 const HomeSlider = () => {
   const settings = {
@@ -18,7 +18,7 @@ const HomeSlider = () => {
     pauseOnHover: false, 
   };
 
-  const images = [image1, image2];
+  const images = [image1];
 
   return (
     <div className="slider-container">

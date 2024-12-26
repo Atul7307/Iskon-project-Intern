@@ -23,7 +23,7 @@ const PoliciesUsage = () => {
   return (
     <>
     <Header />
-      <div className="mx-auto p-6 w-[70%]">
+      <div className="mx-auto p-6 w-[70%] pt-16">
         <nav className="text-sm text-slate-600  mb-4">
           <Link to="/" className="hover:underline no-underline text-slate-950 font-bold">
             Home

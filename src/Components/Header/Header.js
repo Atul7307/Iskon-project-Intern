@@ -33,7 +33,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="navbar-collapse collapse" id="navbarSupportedContent ">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <div className="pt-2 pb-2 nav-bar">
           <NavLink exact to="/" className="nav-link" activeClassName="active">
             HOME
@@ -48,14 +48,14 @@ const Header = () => {
             ABOUT
           </div>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <NavLink to="/about" className="nav-Link" activeClassName="active">
+            <NavLink to="/about" className="nav-link" activeClassName="active">
               <li>
                 <span className="dropdown-item">ABOUT ISKCON</span>
               </li>
             </NavLink>
             <NavLink
               to="/founder"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
@@ -64,7 +64,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               to="/philosophy"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
@@ -73,15 +73,25 @@ const Header = () => {
             </NavLink>
             <NavLink
               to="/mission"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
                 <span className="dropdown-item">OUR MISSION</span>
               </li>
             </NavLink>
+            <NavLink
+              to="/more-about-iskcon"
+              className="nav-link"
+              activeClassName="active"
+            >
+              <li>
+                <span className="dropdown-item">MORE ABOUT ISKCON</span>
+              </li>
+            </NavLink>
           </ul>
 
+          {/* Temple  */}
           <div
             className="nav-link dropdown-toggle"
             id="navbarDropdown"
@@ -92,124 +102,96 @@ const Header = () => {
             TEMPLE
           </div>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <NavLink to="/Arti" className="nav-Link" activeClassName="active">
+            <NavLink to="/arti" className="nav-link" activeClassName="active">
               <li>
                 <span className="dropdown-item">AARTI</span>
               </li>
             </NavLink>
             <NavLink
               to="/SaturdaySatsang"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">SATURDAY SATSANG</span>
+                <span className="dropdown-item">SATURADAY SATSANG</span>
               </li>
             </NavLink>
             <NavLink
               to="/SundayFeast"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">SUNDAY FEAST</span>
+                <span className="dropdown-item">Sunday Feast</span>
               </li>
             </NavLink>
+            
           </ul>
 
-          {/* <NavLink to="#" className="nav-link" activeClassName="active">
-            TEMPLE
-          </NavLink> */}
-          {/* <NavLink to="#" className="nav-link" activeClassName="active">
-            OUR PROGRAM
-          </NavLink> */}
+          {/* OUR PROGRAM */}
           <div
             className="nav-link dropdown-toggle"
-            id="programDropdown"
+            id="navbarDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             OUR PROGRAM
           </div>
-          <ul className="dropdown-menu" aria-labelledby="programDropdown">
-            <NavLink
-              to="/YouthSeminar"
-              className="nav-Link"
-              activeClassName="active"
-            >
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <NavLink to="/" className="nav-link" activeClassName="active">
               <li>
-                <span className="dropdown-item">YOUTH SEMINAR</span>
+                <span className="dropdown-item">YOUTH PREACHING</span>
               </li>
             </NavLink>
             <NavLink
-              to="/Counselling"
-              className="nav-Link"
+              to="/"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">COUNSELLING</span>
-              </li>
-            </NavLink>
-
-            <NavLink
-              to="/BhaktiVriksha"
-              className="nav-Link"
-              activeClassName="active"
-            >
-              <li>
-                <span className="dropdown-item">BHAKTI VRIKSH</span>
+                <span className="dropdown-item">CONGREGATION PREACHING</span>
               </li>
             </NavLink>
             <NavLink
-              to="/BhaktiSastri"
-              className="nav-Link"
+              to="/"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">BHAKTI SASTRI</span>
+                <span className="dropdown-item">BAGAVAD GITA COURSES</span>
               </li>
             </NavLink>
-
             <NavLink
-              to="/GitaForYou"
-              className="nav-Link"
+              to="/"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">GITA FOR YOU</span>
+                <span className="dropdown-item">CHILDREN PREACHING</span>
               </li>
             </NavLink>
-
-            <NavLink
-              to="/GopalaFunSchool"
-              className="nav-Link"
-              activeClassName="active"
-            >
-              <li>
-                <span className="dropdown-item">GOPALA FUN SCHOOL</span>
-              </li>
-            </NavLink>
-
             <NavLink
               to="/CorporateProgrammes"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
                 <span className="dropdown-item">CORPORATE PROGRAMMES</span>
               </li>
             </NavLink>
-            <NavLink to="/" className="nav-Link" activeClassName="active">
+            <NavLink
+              to="/"
+              className="nav-link"
+              activeClassName="active"
+            >
               <li>
                 <span className="dropdown-item">SOCIAL WORK</span>
               </li>
             </NavLink>
           </ul>
 
-          {/* <NavLink to="#" className="nav-link" activeClassName="active">
-            SEVA OPPORTUNITIES
-          </NavLink> */}
+          {/*DONATE  */}
           <div
             className="nav-link dropdown-toggle"
             id="navbarDropdown"
@@ -220,18 +202,14 @@ const Header = () => {
             DONATE
           </div>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <NavLink
-              to="/LifeMembership"
-              className="nav-Link"
-              activeClassName="active"
-            >
+            <NavLink to="/LifeMembership" className="nav-link" activeClassName="active">
               <li>
                 <span className="dropdown-item">LIFE MEMBERSHIP</span>
               </li>
             </NavLink>
             <NavLink
               to="/nitya-seva"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
@@ -240,7 +218,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               to="/GauSeva"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
@@ -249,22 +227,29 @@ const Header = () => {
             </NavLink>
             <NavLink
               to="/food-for-life"
-              className="nav-Link"
+              className="nav-link"
               activeClassName="active"
             >
               <li>
                 <span className="dropdown-item">FOOD FOR LIFE ANNADAAN</span>
               </li>
             </NavLink>
-            <NavLink to="/" className="nav-Link" activeClassName="active">
+            <NavLink
+              to="/"
+              className="nav-link"
+              activeClassName="active"
+            >
               <li>
                 <span className="dropdown-item">VIGRAH SEVA</span>
               </li>
             </NavLink>
           </ul>
+          
           <NavLink to="#" className="nav-link" activeClassName="active">
             SHOP
           </NavLink>
+
+          {/* SAMSKARA */}
           <div
             className="nav-link dropdown-toggle"
             id="navbarDropdown"
@@ -277,7 +262,7 @@ const Header = () => {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <NavLink to="/kirtan-booking" className="nav-link" activeClassName="active">
               <li>
-                <span className="dropdown-item">Book A Kirtan</span>
+                <span className="dropdown-item">BOOK A KIRTAN</span>
               </li>
             </NavLink>
             <NavLink
@@ -286,10 +271,9 @@ const Header = () => {
               activeClassName="active"
             >
               <li>
-                <span className="dropdown-item">Book Yagna</span>
+                <span className="dropdown-item">BOOK A YAGNA</span>
               </li>
             </NavLink>
-            
           </ul>
         </div>
       </div>
@@ -570,7 +554,8 @@ const Header = () => {
                 <span className="dropdown-item">Book Yagna</span>
               </li>
             </NavLink>
-            
+
+
           </ul>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Banner = () => {
               <h5>
                 In 1965, at the age of 69,
                 <strong>A. C. Bhaktivedanta Swami Prabhupada</strong>
-                boarded the steamship ‘Jaladuta’ from Mumbai on his way to
+                boarded the steamship ‘Jaladuta’ from  on his way to
                 United States. At an age when most people think of retiring
                 Srila Prabhupada undertook this arduous journey to fulfill the
                 mission of Lord Caitanya and follow the instruction of his

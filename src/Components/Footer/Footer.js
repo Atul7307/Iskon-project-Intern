@@ -44,7 +44,7 @@ function Footer() {
             </h3>
           </div>
 
-
+        
           <div className="d-flex justify-content-center mb-2 gap-3">
             <img src={mail} alt="e-mail icon" />
             <h3 style={{ color: "white", fontWeight: "400" }}>
@@ -53,7 +53,7 @@ function Footer() {
           </div>
         </div>
 
-
+        
         <div className="col-12 col-lg-4 pb-4 ">
           <div className="Box">
             <h1 className="textHead">NEWSLETTER</h1>
@@ -152,9 +152,9 @@ function Footer() {
             justifyContent: "center",
           }}
         >
-          <div className="d-flex align-items-center footer-copyright">
+          <div className="flex items-center footer-copyright mb-2">
             <img src={footerLogo} alt="Footer Logo" className="footer-logo" />
-            <h5
+            <h5 className="m-0"
               style={{
                 color: "white",
                 fontWeight: "400",
@@ -162,8 +162,10 @@ function Footer() {
             >
               © 2024 ISKCON Vijayawada
             </h5>
-            <a href="#" style={{ textDecoration: "none" }}>
-              <Link to="/policies-usage" className="text-white no-underline hover:underline">Policies of uses</Link>
+            <a href="#" style={{ textDecoration: "none" }}
+            className="flex justify-center items-center"
+            >
+            <Link to="/policies-usage" className="text-white no-underline hover:underline text-[10px]">Policies of usage</Link>
             </a>
           </div>
           <div className="d-flex gap-3 justify-content-center">
@@ -211,7 +213,19 @@ function Footer() {
           </div>
         </div>
       </div>
-
+      <div className="d-flex justify-content-center">
+        <a
+          className="digital-dose"
+          href="https://digitaldose.in/"
+          style={{
+            color: "white",
+            textAlign: "center",
+          }}
+        >
+          Designed & Developed By DigitalDose
+        </a>
+      </div>
+     
     </section>
   );
 }

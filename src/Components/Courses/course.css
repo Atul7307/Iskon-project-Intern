@@ -1,0 +1,37 @@
+
+
+.main{
+ padding: 3rem 0;
+}
+
+.subheading{
+    gap: 2rem;
+}
+
+.content{
+    padding: 2rem 0;
+}
+
+.box{
+    padding: 0 3rem;
+    margin-top: 3rem;
+}
+@media (max-width: 768px) {
+
+    .main{
+        padding: 1rem 0;
+    }
+
+    .subheading{
+        gap: 0rem;
+    }
+
+    .box{
+        padding: 0 1.25rem;
+        margin-top: 1rem;
+    }
+    .content {
+        padding-top:1.25rem;
+        padding-bottom: 1.25rem;
+    }
+}

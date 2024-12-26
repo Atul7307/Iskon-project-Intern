@@ -29,9 +29,11 @@ import PolicyDetail from "./Components/Footer/PolicyDetail"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BhaktiVriksh from "./Pages/BhaktiVriksh/BhaktiVriksh";
 import KirtanBookingPage from "./Pages/samskara/bookAKirtan/KirtanBookingPage";
 import BookYagna from "./Pages/samskara/BookYagna/BookYagna";
+import Fastival from "./Components/Fastival/Fastival";
+import FormPage from "./Components/Fastival/FormPage";
+import Courses from "./Components/Courses/Courses";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -64,6 +66,9 @@ root.render(
         <Route path="/policies-usage/:slug" element={<PolicyDetail />} />
         <Route path="/kirtan-booking" element={<KirtanBookingPage/>}/>
         <Route path="/yagna-booking" element={<BookYagna/>}/>
+        <Route path="/festival" element={<Fastival />} />
+        <Route path="/donation-form/:slug" element={<FormPage />} />
+        <Route path="/courses" element={<Courses/>} />
       </Routes>
     </Router>
   </React.StrictMode>

@@ -1,0 +1,10 @@
+.design{
+    background-image: radial-gradient(#C61D21 ,#B41A1E, #600E10  );
+    background-clip: text;
+    color: transparent;
+}
+
+.festival{
+    background-image: url(./assets/bg1.png);
+    background-size: cover;
+}

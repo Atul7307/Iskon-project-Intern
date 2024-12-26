@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import "./Home.css";
 import "@fontsource/dm-serif-display";
 import Header from "../../Components/Header/Header";
@@ -12,14 +12,46 @@ import Programs from "./assets/images/Programs.png";
 import Sevak from "./assets/images/Sevak.png";
 import Youth from "./assets/images/Youth.png";
 import CircleImage from "./assets/images/Vector.png";
-import Banner from "./assets/images/Banner.png";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import courseimg from './assets/coures.png'
+import festivalimg from './assets/festival.png'
+import yatraimg from './assets/yatra.png'
+import lord from './assets/lord.png'
+import datas from "./joiningformcontect";
+import SpeakWithPriestForm from "./Components/formsection/SpeakWithPriestForm";
+import RequestKrishnaPrasadForm from "./Components/formsection/RequestKrishnaPrasadForm";
+import BookKirtanForm from "./Components/formsection/BookKirtanForm";
+import GetConnectForm from "./Components/formsection/GetConnectForm";
+import DownloadVideoForm from "./Components/formsection/DownloadVideoForm";
+import BookAYagnaForm from "./Components/formsection/BookAYagnaForm";
 
 function Home() {
   const [rotatedIndex, setRotatedIndex] = useState(null);
+  const [isOpen, setIsOpen] = useState({ status: false, data: null });
 
+  const closePopup = () => setIsOpen({ status: false, data: null });
+
+  // Function to dynamically render form components
+  const renderForm = () => {
+    switch (isOpen.data) {
+      case 1:
+        return <SpeakWithPriestForm />;
+      case 2:
+        return <BookKirtanForm />;
+      case 3:
+        return <RequestKrishnaPrasadForm />;
+      case 4:
+        return <BookAYagnaForm />;
+      case 5:
+        return <DownloadVideoForm />;
+      case 6:
+        return <GetConnectForm />;
+      default:
+        return <p>No form available</p>;
+    }
+  };
   const handleCircleClick = (index) => {
     setRotatedIndex(index);
   };
@@ -50,21 +82,105 @@ function Home() {
           </NavLink>
         </div>
 
-        {/* <div className="banner-container">
-          <img src={Banner} alt="Banner" className="banner" />
-          <a
-            href="https://iskconvjagita4you.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="register-button">REGISTER NOW</button>
-          </a>
-        </div> */}
-
         <ImageSlider />
 
+        {/*  Courses Festival yatra form  Div */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-[80%] mx-auto mt-5">
+          <div className=" bg-[#c61d21] rounded-[30px] border-8 border-[#c61d21] relative">
+            <img src={courseimg} alt="" />
+            <div className="w-full  absolute top-[40%] bg-[#b11a1fc3] py-4 flex items-center justify-center">
+              <Link to="/courses"
+              onClick={() => window.scrollTo(0, 0)}
+              className=" text-center text-white text-4xl font-semibold font-['Open Sans'] no-underline hover:underline ">
+                Courses
+              </Link>
+            </div>
+          </div>
+          <div className=" bg-[#c61d21] rounded-[30px] border-8 border-[#c61d21] relative">
+            <img src={festivalimg} alt="" />
+            <div className="w-full  absolute top-[40%] bg-[#b11a1fc3] py-4 flex items-center justify-center">
+              <Link to="/festival" 
+              onClick={() => window.scrollTo(0, 0)}
+              className=" text-center text-white text-4xl font-semibold font-['Open Sans'] no-underline hover:underline ">
+                Festival
+              </Link>
+            </div>
+          </div>
+          <div className=" bg-[#c61d21] rounded-[30px] border-8 border-[#c61d21] relative">
+            <img src={yatraimg} alt="" />
+            <div className="w-full  absolute top-[40%] bg-[#b11a1fc3] py-4 flex items-center justify-center">
+              <Link 
+              onClick={() => window.scrollTo(0, 0)}
+              className=" text-center text-white text-4xl font-semibold font-['Open Sans'] no-underline hover:underline ">
+                Yatra
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Joining the Family of Lord Krishna */}
+        <div
+          className="w-full  p-6 md:p-8 flex flex-col md:flex-row gap-3 justify-center items-center my-3 md:my-5 relative"
+          style={
+            {
+              background: `url(${lord})`,
+              backgroundSize: "cover"
+            }
+          }
+        >
+          {/* Modal / Popup */}
+          {isOpen.status && (
+            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+              <div className="relative flex bg-white rounded-lg shadow-lg w-[90%] md:w-[60%]">
+                {/* Close Button */}
+                <button
+                  onClick={closePopup}
+                  className="absolute top-2 right-2 text-gray-600 hover:text-black text-4xl font-bold"
+                >
+                  &times;
+                </button>
+
+                {/* Render Dynamic Form */}
+                {renderForm()}
+              </div>
+            </div>
+          )}
+          <div className="w-full md:w-[50%] "
+            style={{
+              textShadow:
+                "-1px -1px 0 #C61D21, 1px -1px 0 #C61D21, -1px 1px 0 #C61D21, 1px 1px 0 #C61D21",
+
+            }}
+          ><span className="text-[#600e10]/90 text-2xl md:text-7xl font-normal font-['DM Serif Display'] md:leading-[116px] font-bold block text-start uppercase">Join the family of<br /></span>
+            <span className="text-[#600e10]/90 text-4xl md:text-8xl font-normal font-['DM Serif Display'] md:leading-[116px] font-[750] md:font-extrabold">LORD KRISHNA</span>
+          </div>
+          <div className="w-[90%] md:w-[45%] grid grid-cols-1 md:grid-cols-2 gap-2 place-content-around">
+            {
+              datas.map((data) => {
+                return (
+                  <div className=" bg-[#f9eadb]/90 rounded-[10px] border-2 border-[#c61d21] flex gap-4 items-center p-2">
+                    <img src={data.img} alt="" className="w-[50px] h-[50px] " />
+                    <Link className="text-[#600e10] text-sm font-bold font-['Lato']  m-0 text-start uppercase no-underline hover:underline" onClick={() =>
+                      setIsOpen({
+                        status: true,
+                        data: data.id,
+                      })
+                    }
+                    >
+                      {data.content}
+                    </Link>
+                  </div>
+                )
+              })
+            }
+          </div>
+
+        </div>
+
+
+
         <div className="discover-more">
-          <h1>Discover More</h1>
+          <h1>Explore More</h1>
           <div className="discover-items">
             {[
               {
@@ -90,9 +206,8 @@ function Home() {
                       <img
                         src={CircleImage}
                         alt="Circle Border"
-                        className={`circle ${
-                          rotatedIndex === index ? "rotate" : ""
-                        }`}
+                        className={`circle ${rotatedIndex === index ? "rotate" : ""
+                          }`}
                       />
                       <img
                         src={item.src}
@@ -134,7 +249,7 @@ function Home() {
                       alt="Circle Border"
                       className={`circle ${rotatedIndex === 5 ? "rotate" : ""}`}
                     />
-                    <img src={Sevak} className="inner-image" />
+                    <img src={Sevak} className="inner-image" alt="sevak"/>
                   </NavLink>
                 </div>
               </div>
@@ -151,17 +266,19 @@ function Home() {
           </div>
         </div>
 
+        <div className="mustWatch md:pt-4 pb-4">
+          <h1>Must Watch</h1>
+          <YouTubeSlider />
+        </div>
+
         <div className="newsSection">
           <h1>
             ISKCON VIJAYAWADA <br /> In the news
           </h1>
           <NewsSlider />
         </div>
-        <div className="mustWatch pt-4 pb-4">
-          <h1>Must Watch</h1>
-          <YouTubeSlider />
-        </div>
-      </div>
+
+      </div >
       <Footer />
     </>
   );

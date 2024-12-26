@@ -46,7 +46,7 @@ const Banner = () => {
                     many years to come. In Vṛndavana are the magnificent
                     Kṛṣṇa-Balarama Temple and International Guesthouse, gurukula
                     school, and Srila Prabhupada Memorial and Museum. There is
-                    also a major cultural and educational center in Mumbai.
+                    also a major cultural and educational center in .
                     There are beautiful temples in Delhi, Bangalore, Ahmedabad,
                     Baroda and many other cities throughout India.
                   </h5>

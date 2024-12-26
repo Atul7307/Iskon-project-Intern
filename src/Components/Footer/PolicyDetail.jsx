@@ -2,6 +2,12 @@ import { useParams, Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import TermsAndConditions from "./TermsConditon";
+import TermsAndConditionsOfBook from './TermsConditionofBook'
+import PrivacyPolicyOfBook from './PrivacyPolicyofBook'
+import ReturnAndRefund from './ReturnAndRefund'
+import ShippingAndDelivery from "./ShippingAndDelivery";
+import Guidlines from './Guidlines'
+import Conditions from "./Conditions";
 
 const policiesContent = {
   "term--conditions-of-donation": {
@@ -10,27 +16,27 @@ const policiesContent = {
   },
   "terms--conditions-of-book-store": {
     title: "Terms & Conditions of Book Store",
-    content: "Content for Terms & Conditions of Book Store...",
+    content: <TermsAndConditionsOfBook/>,
   },
   "privacy-policy-of-book-store": {
     title: "Privacy Policy of Book Store",
-    content: "Content for Privacy Policy of Book Store...",
+    content: <PrivacyPolicyOfBook/>,
   },
   "return-and-refund-policy-of-book-store": {
     title: "Return and Refund Policy of Book Store",
-    content: "Content for Return and Refund Policy of Book Store...",
+    content: <ReturnAndRefund/>,
   },
   "shipping--delivery-policy-of-book-store": {
     title: "Shipping & Delivery Policy of Book Store",
-    content: "Content for Shipping & Delivery Policy of Book Store...",
+    content: <ShippingAndDelivery />,
   },
   "guidelines-to-please-krishna-during-purushottam-month": {
     title: "Guidelines to Please Krishna During Purushottam Month",
-    content: "Content for Guidelines to Please Krishna...",
+    content: <Guidlines />,
   },
   "term--conditions": {
     title: "Term & Conditions",
-    content: "Content for Terms & Conditions...",
+    content: <Conditions />,
   },
   "krsna-app-privacy-policy": {
     title: "Krsna App Privacy Policy",
@@ -49,7 +55,7 @@ const PolicyDetail = () => {
   return (
     <>
     <Header/>
-      <div className="w-[70%] mx-auto py-6">
+      <div className="w-[70%] mx-auto py-6 pt-16">
         <nav className="text-sm text-slate-600 mb-4">
           <Link to="/" className="hover:underline  no-underline text-slate-950 font-bold">
             Home

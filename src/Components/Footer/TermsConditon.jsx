@@ -8,13 +8,13 @@ const TermsAndConditions = () => {
         <p className="text-start font-['Roboto'] text-black text-lg">
           The website{" "}
           <a
-            href="https://www.iskconmumbai.com"
+            href="https://www.iskconvijayawada.org"
             className="text-blue-500 no-underline"
           >
-            www.iskconmumbai.com
+            www.iskconvijayawada.org
           </a>{" "}
           is fully owned by International Society of Krishna Consciousness
-          (ISKCON), Hare Krishna Land, Juhu, Mumbai-400049.
+          (ISKCON), Hare Krishna Land, vijayawada, Skew Bridge, Krishna Lanka, Vijayawada - 520013
         </p>
         <p className="text-start font-['Roboto'] text-black text-lg">
           Your use of the Site is governed by the policies, terms, and
@@ -47,10 +47,10 @@ const TermsAndConditions = () => {
         <p className="text-start font-['Roboto'] text-black text-lg">
           This privacy notice discloses the privacy practices for{" "}
           <a
-            href="https://www.iskconmumbai.com"
+            href="https://www.iskconvijayawada.org"
             className="text-blue-500 no-underline"
           >
-            www.iskconmumbai.com
+            www.iskconvijayawada.org
           </a>
           . This privacy notice applies solely to information collected by this
           website. It will notify you of the following:
@@ -112,7 +112,7 @@ const TermsAndConditions = () => {
         While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computer servers in which we store personally identifiable information are kept in a highly secure environment.
         </p>
         <p className="text-start font-['Roboto'] text-black text-lg">
-        If you feel that we are not abiding by this privacy policy, you should contact our business head immediately via telephone at +91-2226206860 or via email at info@iskconmumbai.com
+        If you feel that we are not abiding by this privacy policy, you should contact our business head immediately via telephone at +91-2226206860 or via email at info@iskcon.com
         </p>
       </div>
       <div>

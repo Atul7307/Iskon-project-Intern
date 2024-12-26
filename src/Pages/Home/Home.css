@@ -179,7 +179,7 @@
 
 @media (max-width: 600px) {
   .discover-more {
-    padding: 40px 0 0 0;
+    padding: 0;
   }
 
   .discover-more h1 {
@@ -202,7 +202,7 @@
   }
 
   .mainSection {
-    padding: 40px 10px;
+    padding: 0 10px;
   }
 
   .mainSection h1 {
